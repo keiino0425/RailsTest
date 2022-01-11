@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     protected
 
     def configure_permitted_parameters
-       #以下の:name部分は追加したカラム名に変える
-       devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :userimage, :userinfo]
+       
+       devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :userimage, :userinfo])
     end
 end
